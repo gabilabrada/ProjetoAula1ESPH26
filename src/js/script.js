@@ -21,31 +21,58 @@
 // taxaJuros = 0.50;
 // console.log(taxaJuros);
 
-var exemplo1 = "Olá dev var";
-console.log(exemplo1);
+// var exemplo1 = "Olá dev var";
+// console.log(exemplo1);
 
-let exemplo2 = "Olá dev let";
-console.log(exemplo2);
+// let exemplo2 = "Olá dev let";
+// console.log(exemplo2);
 
-const exemplo3 = "Olá dev const";
-console.log(typeof exemplo3);
+// const exemplo3 = "Olá dev const";
+// console.log(typeof exemplo3);
 
-let exemplo4 = 20;
-console.log(exemplo4);
+// let exemplo4 = 20;
+// console.log(exemplo4);
 
-let exemplo5 = true;
-console.log(exemplo5);
+// let exemplo5 = true;
+// console.log(exemplo5);
 
-let exemplo6 = {nome:"fiap"};
-console.log(typeof exemplo6);
+// let exemplo6 = {nome:"fiap"};
+// console.log(typeof exemplo6);
 
-let exemplo7 = ['Java', 'Python', "C#"];
-console.log(exemplo7);
-console.log(typeof exemplo7);
+// let exemplo7 = ['Java', 'Python', "C#"];
+// console.log(exemplo7);
+// console.log(typeof exemplo7);
 
-// variável indefinida
-let exemplo8;
-console.log(exemplo8);
+// // variável indefinida
+// let exemplo8;
+// console.log(exemplo8);
 
-let exemplo9 = null;
-console.log(exemplo9);
+// let exemplo9 = null;
+// console.log(exemplo9);
+
+// OPERADORES ARITMÉTICOS
+
+const valor1= 20;
+const valor2 = 10;
+
+console.log(valor1 + valor2);
+console.log(valor1 / valor2);
+console.log(valor1 - valor2);
+console.log(valor1 * valor2);
+
+// OPERADORES LÓGICOS
+
+console.log(valor1 > valor2);
+console.log(valor1 > 10 && valor2 != 20);
+console.log(valor2 > 5 || valor1 > 50);
+
+// OPERADORES DE COMPARAÇÃO
+console.log(valor1 < valor2);
+console.log(valor1 >= valor2);
+console.log(valor1 <= valor2);
+console.log(valor1 != valor2);
+console.log(valor1 == valor2);
+console.log(valor1 === valor2);
+console.log("O valor é", valor1);
+
+
