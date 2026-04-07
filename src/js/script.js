@@ -76,81 +76,110 @@
 // console.log("O valor é", valor1);
 
 // Exercício 1
-const p = 100;
-const v = 15
+// const p = 100;
+// const v = 15
 
-const precoFinal = p - v;
-console.log("O preço final com desconto é: R$", precoFinal);
+// const precoFinal = p - v;
+// console.log("O preço final com desconto é: R$", precoFinal);
 
-// Exercício 2
-const usuarioLogado = 1;
-const token = 100;
-const transacaoAutorizada = usuarioLogado === 1 && token>=100;
-console.log("Transação Autorizada com sucesso!", transacaoAutorizada);
+// // Exercício 2
+// const usuarioLogado = 1;
+// const token = 100;
+// const transacaoAutorizada = usuarioLogado === 1 && token>=100;
+// console.log("Transação Autorizada com sucesso!", transacaoAutorizada);
 
-// ESTRUTURA CONDICIONAL
+// // ESTRUTURA CONDICIONAL
 
-//if
-if(true){
-    console.log("é Verdadeiro");
+// //if
+// if(true){
+//     console.log("é Verdadeiro");
+// }
+
+// //if/else
+
+// let nome = "Fiap";
+
+// if(nome=="fiap"){
+//     console.log("nome verdadeiro");
+// }else{
+//     console.log("nome errado");
+// }
+
+// // if encadeado ou aninhado
+
+// let idade = 17;
+
+// if(idade <= 13){
+//     console.log("é uma criança");
+// } else if(idade > 13 && idade <= 18){
+//     console.log("é um adolescente");
+// }else if (idade > 18 && idade <= 59){
+//     console.log("é um adulto");
+// } else{
+//     console.log("é um idoso");
+// }
+
+// // SWITCH CASE
+
+// let times = "santos";
+
+// switch(times){
+//     case "santos":
+//         console.log("Um time idoso");
+//         break;
+//     case "sao paulo":
+//         console.log("o maioral");
+//         break;
+//     case "palmeiras":
+//         console.log("sem mundial");
+//         break;
+//     case "corinthians":
+//         console.log("credo");
+//     default:
+//         console.log("tão ruim quando a seleção brasileira");
+// }
+
+// //ternaria
+
+// let salario = 100;
+// let resultado = salario == 100 ? "Salario Certo": "Salario Errado"
+// console.log(resultado);
+
+// let usuario = "fiap";
+// let userLogado = usuario === "fiap" ? "Logado com sucesso" : "Usuário inválido";
+// console.log(userLogado);
+
+// function verificarParImpar(numero){
+//     return numero % 2 === 0 ? "PAR" : "IMPAR";
+// }
+
+// console.log(verificarParImpar(4))
+
+// ESTRUTURA DE REPETIÇÃO (LAÇO DE REPETIÇÃO)
+
+// for - estrutura de repetoção mais utilizada quando sabemos previamente
+// quantas vezes o código vai ser executado
+
+// declaração, operação, incremento
+for (let i=1; i<=5; i++){
+    console.log("Numero: ", i);
 }
 
-//if/else
+//for para array
+const linguagens =["Java", "Python", "C#"];
 
-let nome = "Fiap";
-
-if(nome=="fiap"){
-    console.log("nome verdadeiro");
-}else{
-    console.log("nome errado");
+for (let i=0; i < linguagens.length; i++){
+    console.log("Linguagem", i, ":", linguagens[i]);
 }
 
-// if encadeado ou aninhado
+const tecnologias = ["JS", "HTML", "CSS"];
 
-let idade = 17;
-
-if(idade <= 13){
-    console.log("é uma criança");
-} else if(idade > 13 && idade <= 18){
-    console.log("é um adolescente");
-}else if (idade > 18 && idade <= 59){
-    console.log("é um adulto");
-} else{
-    console.log("é um idoso");
+for(const tech of tecnologias){
+    console.log("Estudando", tech);
 }
 
-// SWITCH CASE
+const carros = {marca: "Volks", modelo: "Fusca", ano: 1980};
 
-let times = "santos";
-
-switch(times){
-    case "santos":
-        console.log("Um time idoso");
-        break;
-    case "sao paulo":
-        console.log("o maioral");
-        break;
-    case "palmeiras":
-        console.log("sem mundial");
-        break;
-    case "corinthians":
-        console.log("credo");
-    default:
-        console.log("tão ruim quando a seleção brasileira");
+for(let dados in carros){
+    console.log(dados, ":", carros[dados])
 }
-
-//ternaria
-
-let salario = 100;
-let resultado = salario == 100 ? "Salario Certo": "Salario Errado"
-console.log(resultado);
-
-let usuario = "fiap";
-let userLogado = usuario === "fiap" ? "Logado com sucesso" : "Usuário inválido";
-console.log(userLogado);
-
-function verificarParImpar(numero){
-    return numero % 2 === 0 ? "PAR" : "IMPAR";
-}
-
-console.log(verificarParImpar(4))
