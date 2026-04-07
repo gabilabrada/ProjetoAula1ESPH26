@@ -183,3 +183,49 @@ const carros = {marca: "Volks", modelo: "Fusca", ano: 1980};
 for(let dados in carros){
     console.log(dados, ":", carros[dados])
 }
+
+// while - diferente do for, no while não sabemos a 
+// quantidade de vezes que o código vai executar
+
+let i=1;
+
+while(i <= 5){
+    console.log("contagem", i)
+    i++;
+}
+
+// declaração de variável undefined
+// let numero;
+
+// while(numero !== "0"){
+//     numero = prompt("Digite algo (ou 0 para sair)");
+//     console.log("eu sei o que você digitou:", numero)
+// }
+// console.log("Fim do programa")
+
+// do while (Executa ao menos uma vez)
+let contador = 10;
+do {
+    console.log("vai executar pelo menos uma vez")
+    contador++;
+} while(contador <=5);
+
+// declaração da variável undefined
+let palpite;
+
+//gerar um numero aleatório entre 1 e 10
+const sorteio = Math.floor(Math.random() * 10) + 1;
+
+do{
+    palpite = parseInt(prompt("Digite um número entre 1 e 10"));
+    if(isNaN(palpite)){
+        alert("saindo do jogo")
+        break;
+    }
+    if(palpite !== sorteio){
+        alert("Você perdeu R$100,00")
+    }
+}while(palpite !== sorteio)
+    if(palpite === sorteio){
+        alert("Parabéns, você acertou e ganhou R$100,00")
+    }
